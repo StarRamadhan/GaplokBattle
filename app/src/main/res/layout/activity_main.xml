@@ -5,38 +5,39 @@
     android:layout_height="match_parent"
     android:weightSum="20"
     android:orientation="vertical"
-    android:background="#FFFF66">
+    android:background="#09264a">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="5"
         android:layout_marginTop="20dp"
         android:gravity="center">
         <ImageView
             android:layout_width="240dp"
             android:layout_height="240dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_banner"/>
+            android:src="@drawable/ic_banner1"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="20"
+        android:layout_weight="15"
         android:orientation="vertical">
         <TextView
             android:id="@+id/txt_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:fontFamily="@font/birdygame"
+            android:fontFamily="@font/kidszone"
             android:textSize="40dp"
             android:text="GAPLOK BATTLE!!!"
             android:onClick="StartGame"
-            android:textColor="#009933"/>
+            android:textColor="#F58634"/>
         <TextView
             android:id="@+id/btn_start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="50dp"
             android:gravity="center"
             android:fontFamily="@font/badaboom"
             android:textSize="40dp"
@@ -47,34 +48,37 @@
             android:id="@+id/btn_history"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
             android:fontFamily="@font/badaboom"
             android:textSize="40dp"
             android:text="Battle History"
             android:textColor="@color/colorTextMenu"
+            android:onClick="HistoryGame"
             />
         <TextView
-            android:id="@+id/btn_about"
+            android:id="@+id/btn_enemy_setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
             android:fontFamily="@font/badaboom"
             android:textSize="40dp"
-            android:text="About"
+            android:text="Enemy's Photo"
             android:textColor="@color/colorTextMenu"
+            android:onClick="PhotoGame"
             />
         <TextView
             android:id="@+id/btn_exit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
             android:fontFamily="@font/badaboom"
             android:textSize="40dp"
             android:text="Exit"
             android:textColor="@color/colorTextMenu"
+            android:onClick="ExitGame"
             />
     </LinearLayout>
 </LinearLayout>

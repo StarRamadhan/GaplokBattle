@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_player_slap"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/header_slap"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gaplok Him !!!"
+        android:fontFamily="@font/kidszone"
+        android:textSize="50sp"
+        android:textColor="@color/colorTextMenu"/>
+    <ImageView
+        android:layout_below="@id/accel_value"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_slap"
+        android:gravity="center"
+        android:src="@drawable/ic_banner1"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/header_slap"
+        android:id="@+id/accel_value"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/kidszone"
+        android:textSize="50sp"
+        android:textColor="@color/colorTextMenu"/>
+</RelativeLayout>

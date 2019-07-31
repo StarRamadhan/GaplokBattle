@@ -1,149 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFF99"
+    android:background="#09264a"
     android:weightSum="20">
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="5"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:id="@+id/id_healthPoint">
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#32CD32"
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:text="Enemy"
-                android:textSize="20sp" />
-            </LinearLayout>
-
-        <LinearLayout
-            android:layout_weight="2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="VS"
-                android:textAlignment="center"
-                android:textSize="20sp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#32CD32"
-            android:gravity="center">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="You"
-                    android:textSize="20sp"
-                    android:gravity="center"
-                    android:layout_gravity="center_horizontal"/>
-        </LinearLayout>
-    </LinearLayout>
-
 
     <LinearLayout
-        android:id="@+id/id_battleArea"
+        android:id="@+id/battleArea"
         android:layout_width="match_parent"
-        android:layout_weight="17"
-        android:weightSum="9"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:background="@drawable/ic_background_janken"
+        android:layout_height="match_parent"
+        android:weightSum="20"
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
+            android:id="@+id/id_suitArea"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3">
-            <ImageView
-                android:id="@+id/iv_enemy"
-                android:layout_width="140dp"
-                android:layout_height="200dp"
-                android:layout_gravity="left"
-                android:rotation="180"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_rock" />
+            android:layout_weight="17"
+            android:weightSum="9"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_background_janken"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+                <ImageView
+                    android:id="@+id/iv_enemy"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="left"
+                    android:rotation="180"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_rock" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"></LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="3">
+                <ImageView
+                    android:id="@+id/iv_player"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="right"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_rock" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/id_buttonArea"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="6"></LinearLayout>
-
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:layout_weight="3">
-            <ImageView
-                android:id="@+id/iv_player"
-                android:layout_width="140dp"
-                android:layout_height="200dp"
-                android:layout_gravity="right"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_rock" />
+            android:layout_weight="3"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/btn_rock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_btn_rock"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/btn_scissor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_btn_scissor"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/btn_paper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_btn_paper"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/id_buttonArea"
-        android:layout_width="match_parent"
-        android:layout_weight="3"
-        android:layout_height="0dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_gravity="center">
-            <ImageView
-                android:id="@+id/btn_rock"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_btn_rock"
-                android:layout_weight="1"
-                />
-            <ImageView
-                android:id="@+id/btn_scissor"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_btn_scissor"
-                android:layout_weight="1"
-                />
-            <ImageView
-                android:id="@+id/btn_paper"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_btn_paper"
-                android:layout_weight="1"
-                />
-        </LinearLayout>
-    </LinearLayout>
 
 
 </LinearLayout>

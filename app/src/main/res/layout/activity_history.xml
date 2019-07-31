@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+    android:background="#09264a"
+    tools:context="com.akb.gaplokbattle.Activity.ReadDataActivity">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/history_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Battle"
+        android:textColor="@color/colorTextMenu"
+        android:textSize="30sp"
+        android:fontFamily="@font/kidszone"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/history_header"
+        android:id="@+id/dataItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
